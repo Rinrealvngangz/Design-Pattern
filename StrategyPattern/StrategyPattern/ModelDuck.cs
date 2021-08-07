@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 using static System.Console;
 namespace StrategyPattern
 {
-   internal class MallardDuck : Duck
+   internal class ModelDuck : Duck
     {
-        public MallardDuck()
+        public ModelDuck()
         {
-            _flyBehavior = new FlyWithWings();
+            _flyBehavior = new FlyNoWay();
             _quackBehavior = new Quack();
-
         }
         public override void Display()
         {
-            WriteLine("I'm real Mallard duck");
+            WriteLine("I'm model duck");
         }
-
     }
 }
