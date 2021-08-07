@@ -1,2 +1,2 @@
 # Design-Pattern
-Các Design Patten Thông dụng
+Các Design Patten thông dụng
