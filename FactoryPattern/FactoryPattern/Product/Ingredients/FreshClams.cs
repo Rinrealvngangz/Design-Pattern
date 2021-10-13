@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using FactoryPattern.Product.Ingredients.Abstractions;
+namespace FactoryPattern.Product.Ingredients
+{
+    internal class FreshClams : IClam
+    {
+        string IClam.ToString()
+        {
+            return "Fresh Clams from Long Island Sound";
+        }
+    }
+}
