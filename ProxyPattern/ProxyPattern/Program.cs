@@ -1,3 +1,4 @@
+using ProxyPattern.Castle;
 using ProxyPattern.ProtectedProxy;
 
 namespace ProxyPattern;
@@ -6,9 +7,10 @@ public class Program
 {
    static void Main(string[] args)
    {
-      var author = new AuthorUpdateDocumentName();
+      var  author = new AuthorUpdateDocumentName();
            author.UpdatesNameGivenUserInAuthorRole();
-         //  author.ThrowsUnauthorizedExceptionGivenUserNotInAuthorRole();
+           author.ThrowsUnauthorizedExceptionGivenUserNotInAuthorRole();
+       
       Console.ReadLine();
    }
 }

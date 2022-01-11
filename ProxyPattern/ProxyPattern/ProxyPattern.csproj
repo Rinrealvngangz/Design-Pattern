@@ -8,19 +8,23 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Castle.Core" Version="4.4.1" />
       <PackageReference Include="xunit" Version="2.4.2-pre.12" />
     </ItemGroup>
 
     <ItemGroup>
       <Compile Remove="Test\**" />
+      <Compile Remove="Castle\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="Test\**" />
+      <EmbeddedResource Remove="Castle\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Test\**" />
+      <None Remove="Castle\**" />
     </ItemGroup>
 
 </Project>
